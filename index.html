@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>محمد 👑</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Logo" class="logo">
-    <h1>محمد 👑</h1>
+    <div class="container header-inner">
+      <img src="images/logo.png" alt="شعار محمد" class="logo" />
+      <h1>محمد 👑</h1>
+    </div>
   </header>
 
-  <section id="contact">
-    <h2>تواصل معي</h2>
-    <div class="social">
-      <p>📧 ايميل: <a href="mailto:Copilotmicrosoft8@gmail.com">Copilotmicrosoft8@gmail.com</a></p>
-      <p>💬 واتساب: <a href="https://wa.me/201092202653">01092202653</a></p>
-      <p>📘 فيسبوك: <a href="https://www.facebook.com/share/1CqdCnV2aY/" target="_blank">صفحتي على فيسبوك</a></p>
-  
-    </div>
-  </section>
+  <main>
+    <section id="contact" class="container main-center" aria-labelledby="contact-title">
+      <h2 id="contact-title">تواصل معي</h2>
+
+      <ul class="social" role="list">
+        <li>
+          <p>📧 ايميل:
+            <a href="mailto:Copilotmicrosoft8@gmail.com" aria-label="إر��ال بريد إلكتروني إلى محمد">Copilotmicrosoft8@gmail.com</a>
+          </p>
+        </li>
+
+        <li>
+          <p>💬 واتساب:
+            <a href="https://wa.me/201092202653"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="فتح محادثة واتساب على الرقم +20 109 220 2653">+20 109 220 2653</a>
+          </p>
+        </li>
+
+        <li>
+          <p>📘 فيسبوك:
+            <a href="https://www.facebook.com/share/1CqdCnV2aY/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="فتح صفحتي على فيسبوك">صفحتي على فيسبوك</a>
+          </p>
+        </li>
+
+        <li>
+          <p>🐦 تويتر:
+            <a href="https://twitter.com/username"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="فتح صفحتي على تويتر">صفحتي على تويتر</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 محمد</p>
+    <div class="container">
+      <p>© 2025 محمد</p>
+    </div>
   </footer>
 </body>
 </html>
